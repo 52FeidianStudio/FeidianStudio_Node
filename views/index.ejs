@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title><%=title%></title>
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+	<meta name="keywords" content="<%=title%>" />
+	<meta name="description" content="<%=description%>" />
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript"></script>
 </head>
 <body>
-	<h1><%=message%></h1>
+<div id="wrapper">
+	<!-- 引入头部文件 -->
+	<% include header %>	
+	<!-- 内容区域 -->
+	<div id="main">
+		<!-- 图片滚动区域 -->
+		<div id="focus">
+			<div class="focus-block">
+				<img src="images/focus1.jpg" class="focus-img">
+			</div>
+		</div>
+		<!-- 工作室方向 -->
+  	    <div class="group">
+  	    	<div class="block-header">
+  	    		<h2 class="title">GROUPS</h2>
+  	    		<p class="title-description">OUR STUDY DIRECTION</p>
+  	    	</div>
+  	    	<div class="block-content">
+  	    		<div><span><img src="images/group1.png"></span><p>Web开发</p></div>
+  	    		<div><span><img src="images/group2.png"></span><p>Android/Java开发</p></div>
+  	    		<div><span><img src="images/group3.png"></span><p>iOS开发</p></div>
+  	    		<div><span><img src="images/group4.png"></span><p>信息安全</p></div>
+  	    		<div><span><img src="images/group5.png"></span><p>UI设计</p></div>
+  	    	</div>
+  	    </div>
+  	    <!-- 新闻动态 -->
+  	    <div class="news">
+  	    	<div class="block-header">
+  	    		<h2 class="title">NEWS</h2>
+  	    		<p class="title-description">OUR RECENTLY INFORMATION</p>
+  	    	</div>
+  	    </div>
+        <!-- 友情链接 -->
+        <div class="links">
+        	<div class="block-header">
+        		<h2 class="title">LINKS</h2>
+        		<p class="title-description">OUR FRIENDLY LINKS</p>
+        	</div>
+        	<div class="links-block">
+        		<img src="">
+        		<img src="">
+        		<img src="">
+        		<img src="">
+        		<img src="">
+        		<img src="">
+        	</div>
+        </div>
+	</div>
+	<!-- 引入尾部文件 -->
+	<% include footer %>
+</div>
 </body>
 </html>
