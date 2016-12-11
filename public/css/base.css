@@ -69,7 +69,7 @@ a {
 /*内容区*/
 #main {
 	width: 100%;
-	height: 800px;
+	min-height: 600px;
 	float: left;
 	background: #fff;
 }
