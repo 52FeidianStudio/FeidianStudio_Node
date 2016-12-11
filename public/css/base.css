@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 100%;
+	float: left;
+}
+/*首部*/
+#header {
+	width: 100%;
+	height: 80px;
+	float: left;
+	/*background: #EB3F2F;*/
+	/*background: #34352C;*/
+	background: #373E40;
+}
+#logo {
+	width: 15%;
+	min-width: 200px;
+	height: 100%;
+	margin-left: 10%;
+	float: left;
+}
+#logo img {
+	width: 220px;
+	height: 100%;
+	float: left;
+}
+/*导航*/
+#header-nav {
+	width: 60%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+	/*background: yellow;*/
+}
+#header-nav ul {
+	width: 100%;
+	height:30px;
+	margin-top: 25px;
+	float: left;
+}
+#header-ul ul a {
+	display: inline-block;
+	float: left;
+}
+#header-nav ul li {
+	height:30px;
+	line-height: 30px;
+	float: left;
+	margin-left:5px;
+	margin-right:5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #fff;
+}
+#header-nav ul li:hover {
+	background: #5794FC;
+	border-radius: 3px;
+}
+/*内容区*/
+#main {
+	width: 100%;
+	height: 800px;
+	float: left;
+	background: #fff;
+}
+/*尾部*/
+#footer {
+	width: 100%;
+	height: 80px;
+	float: left;
+	background: #373E40;
+}
+#footer p {
+	width: 50%;
+	height: 30px;
+	display: inline-block;
+	margin-left: 25%;
+	margin-top: 25px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	color: #fff;
+}
+#footer a.backtotop {
+	width: 120px;
+	height:50px;
+	line-height: 65px;
+	text-align: center;
+	margin-top: 15px;
+	margin-right: 50px;
+	display: inline-block;
+	float: right;
+	color: #fff;
+	background-image: url(../images/top.png);
+	background-size: 23px 23px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	/*margin-right: 50px;*/
+}
