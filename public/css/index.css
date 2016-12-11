@@ -1,3 +1,123 @@
 #main {
+	min-height: 1500px;
+	float: left;
+}
+/*图片滚动区*/
+#focus {
+	width: 100%;
+	height: 550px;
+	background: #F5F6EB;
+	float: left;
+}	
+.focus-block {
+	width: 90%;
+	height:500px;
+	margin-left: 5%;
+	margin-top: 25px;
+	background: #EFF0DC;
+	float: left;
+}
+/*滚动图片大小：1400 * 500 */
+.focus-block img.focus-img {
+	width: 1400px;
+	height: 500px;
+	float: left;
+}
+
+.block-header {
+	width: 100%;
+	height: 120px;
+	float: left;
+}
+.title {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	float: left;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #666;
+}
+.title-description {
+	width: 100%;
+	height: 30px;
+	float: left;
+	color: #999;
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+/*团队分组、方向*/
+.group {
+	width: 100%;
+	min-width: 1400px;
+	height: 400px;
+	float: left;
+	background: #fff;
+}
+.group .block-content {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
 	
+}
+.group .block-content div {
+	width: 200px;
+	height: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+}
+.group .block-content div span {
+	width:  130px;
+	height: 130px;
+	margin-left: 25px;
+	display: inline-block;
+	float: left;
+	border-radius: 50%;
+	border: 10px solid #ddd;
+}
+.group .block-content div img {
+	width: 80px;
+	height: 80px;
+	margin-left: 25px;
+	margin-top: 22px;
+}
+.group .block-content div p{
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	float: left;
+	text-align: center;
+}
+
+/*新闻动态*/
+.news {
+	width: 100%;
+	height: 400px;
+	float: left;
+	background: #F5F6EB;
+}
+
+
+/*友情链接*/
+.links {
+	width: 100%;
+	height: 290px;
+	float: left;
+	background: #FFF;
+}
+.links .links-block {
+	width: 90%;
+	height: 140px;
+	margin-left: 7%;
+	float: left;
+	/*background: #fff;*/
+}
+.links-block img {
+	width: 200px;
+	height: 120px;
+	margin: 10px;
+	float:left;
 }

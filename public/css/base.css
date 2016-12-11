@@ -11,6 +11,7 @@ a {
 
 #wrapper {
 	width: 100%;
+	min-width: 1400px;
 	float: left;
 }
 /*首部*/
@@ -63,7 +64,7 @@ a {
 	color: #fff;
 }
 #header-nav ul li:hover {
-	background: #5794FC;
+	background: #8192D6;
 	border-radius: 3px;
 }
 /*内容区*/
