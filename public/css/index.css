@@ -1,12 +1,19 @@
 #main {
+	height: auto;
 	min-height: 1500px;
 	float: left;
+	background-image: url(../images/welcome2.jpg);
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
 }
+
 /*图片滚动区*/
 #focus {
 	width: 100%;
-	height: 550px;
-	background: #F5F6EB;
+	height: 560px;
+	background: #fff;
 	float: left;
 }	
 .focus-block {
@@ -19,11 +26,12 @@
 }
 /*滚动图片大小：1400 * 500 */
 .focus-block img.focus-img {
-	width: 1400px;
+	width: 100%;
 	height: 500px;
 	float: left;
 }
 
+/*内容标题*/
 .block-header {
 	width: 100%;
 	height: 120px;
@@ -48,6 +56,27 @@
 	margin-top: 5px;
 	margin-bottom: 20px;
 }
+/*内容主体*/
+.block-content {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+	
+}
+/*简介*/
+.introduction {
+	width: 100%;
+	min-width: 1400px;
+	height: 300px;
+	float: left;
+	background: #F5F6EB;
+}
+.introduction .block-content p {
+	font-size: 1.2em;
+	text-indent: 2.4em;
+	line-height: 35px;
+	color: #555;
+}
 /*团队分组、方向*/
 .group {
 	width: 100%;
@@ -57,16 +86,17 @@
 	background: #fff;
 }
 .group .block-content {
-	width: 80%;
-	margin-left: 10%;
-	float: left;
-	
+	float: none;
+	width: 1200px;
+	margin: 0 auto;
+	background: red;
 }
 .group .block-content div {
 	width: 200px;
 	height: 250px;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-top: 15px;
 	float: left;
 }
 .group .block-content div span {
@@ -77,6 +107,9 @@
 	float: left;
 	border-radius: 50%;
 	border: 10px solid #ddd;
+}
+.group .block-content div span:hover {
+	border: 10px solid #81C2D6;
 }
 .group .block-content div img {
 	width: 80px;
@@ -91,15 +124,127 @@
 	float: left;
 	text-align: center;
 }
+/*文化*/
+.culture {
+	width: 100%;
+	height: 350px;
+	float: left;
+}
+.culture .block-header h2,
+.culture .block-header p {
+	color: #fff;
+	text-shadow: 0px 0px 5px #000;
+}
+.culture .block-content h2{
+	width: 100%;
+	height: 100px;
+	font-size: 3em;
+	float: left;
+	line-height: 120px;
+	text-align: center;
+	color: #fff;
+	font-family: 华文行楷;
+	text-shadow: 0px 0px 5px #000;
+}
+.culture .block-content h3{
+	width: 100%;
+	font-size: 3em;
+	float: left;
+	line-height: 80px;
+	text-align: center;
+	color: #fff;
+	font-family: "华文行楷", Arial, "Helvetica Neue", Helvetica;
+	text-shadow: 0px 0px 5px #000;
+}
 
 /*新闻动态*/
 .news {
 	width: 100%;
-	height: 400px;
+	height: 480px;
 	float: left;
 	background: #F5F6EB;
+
+}
+.news .block-content {
+	width: 80%;
+	margin-left: 10%;
+}
+.news-list {
+	width: 35%;
+	height: 320px;
+	/*background: #aaa;*/
+}
+.news .left {
+	float: left;
+	margin-left: 12%;
+}
+.news .right {
+	float: right;
+	margin-right: 12%;
+}
+.news-list ul {
+	width: 100%;
+	float: left;
+}
+.news-list ul li {
+	width: 100%;
+	height: 60px;
+	float: left;
+	margin-bottom: 8px;
+}
+.news-list ul li a {
+	height: 30px;
+	display: inline-block;
+	float: left;
+	line-height: 30px;
+	color: #333;
+	font-size: 1.2em;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news-list ul li a:hover {
+	color: #337ab7;
+}
+.news-list ul li font {
+	width: 100%;
+	display: inline-block;
+	color: #666;
 }
 
+/*.news .right {
+	width: 60%;
+	height: 320px;
+	float: right;
+	background: #999;
+}
+.news .right div {
+	width: 45%;
+	height: 100%;
+	margin-right: 5%;
+	float: left;
+}
+.news .right div img {
+	width: 100%;
+	height: 160px;
+	border: 1px solid #333;
+	float: left;
+}
+.news .right div span {
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	float: left;
+}
+.news .right div span p {
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.2em;
+}
+.news .right div span p:first-child {
+	font-size: 1.4em;
+}*/
 
 /*友情链接*/
 .links {
@@ -111,13 +256,15 @@
 .links .links-block {
 	width: 90%;
 	height: 140px;
-	margin-left: 7%;
+	margin-left: 5%;
 	float: left;
 	/*background: #fff;*/
 }
 .links-block img {
-	width: 200px;
+	width: 190px;
 	height: 120px;
 	margin: 10px;
 	float:left;
+	background: yellow;
+
 }
