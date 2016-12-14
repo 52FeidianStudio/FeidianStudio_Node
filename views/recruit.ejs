@@ -9,7 +9,7 @@
 	<meta name="description" content="<%=description%>" />
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/page.css">
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -17,8 +17,29 @@
 	<% include header %>	
 	<!-- 内容区域 -->
 	<div id="main">
-		
+		<div id="recruit">
+			<div class="left-nav">
+				<h2>团队招新</h2>
+				<ul id="left-nav-ul">
+					<a href="javascript:;"><li>招新简介</li></a>
+					<a href="javascript:;"><li>报名表</li></a>
+					<a href="javascript:;"><li>分组简介</li></a>
+				</ul>
+			</div>
+			<div class="right-content">
+				<div class="content-one content-section">
+					<h2>招新简介</h2>
+				</div>
+				<div class="content-two content-section">
+					<h2>报名表</h2>
+				</div>
+				<div class="content-three content-section">
+					<h2>分组简介</h2>
+				</div>
+			</div>
+		</div>
 	</div>
+	<script src="js/page.js"></script>
 	<!-- 引入尾部文件 -->
 	<% include footer %>
 </div>

@@ -1,13 +1,159 @@
 #main {
-	min-height: 600px;
+	min-height: 550px;
 	float: left;
 	padding-bottom: 50px;
+	background: #F5F6EB;
 }
+/*共用元素 start*/
 .block-content {
 	width: 80%;
 	margin-left: 10%;
 	float: left;
 	
+}
+.left-nav {
+	width: 240px;
+	min-height: 200px;
+	float: left;
+	background: #fff;
+	border-radius: 5px;
+	/*border: 1px solid #999;*/
+}
+.left-nav h2 {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	float: left;
+	font-size: 1.15em;
+	text-indent: 1.3em;
+	font-weight: 400;
+	background: #495A80;
+	color: #fff;
+}
+.left-nav ul {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.left-nav ul li {
+	width: 220px;
+	height: 40px;
+	line-height: 50px;
+	text-indent: 0.5em;
+	margin-left: 20px;
+	font-size: 1.0em;
+	float: left;
+	color: #666;
+	border-bottom: 1px dotted #ccc;
+}
+.right-content {
+	width: calc(100% - 280px);
+	margin-left: 20px;
+	min-height: 400px;
+	padding-bottom: 50px;
+	float: left;
+	background: #fff;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 2px red;*/
+}
+.content-section {
+	width: 100%;
+	display: none;
+	float: left;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.content-section h2 {
+	width: 100%;
+	height: 55px;
+	line-height: 50px;
+	text-align: left;
+	float: left;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+.content-one {
+	display: block;
+}
+
+/*共用元素 end*/
+
+/*简介页面*/
+#introduction,
+#culture,
+#recruit {
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-top: 30px;
+	float: left;
+}
+/*#introduction .content-one,
+#introduction .content-two,
+#introduction .content-three,
+#introduction .content-four {
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+}*/
+#introduction .content-section p {
+	width: 100%;
+	float: left;
+	text-indent: 2em;
+	font-size: 1em;
+	line-height: 30px;
+	color: #333;
+}
+#introduction .content-two ul {
+	width: 100%;
+	float: left;
+}
+#introduction .content-two ul li {
+	width: 100%;
+	min-height: 150px;
+	float: left;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 2px #aaa;
+}
+#introduction .content-two ul li img {
+	width: 120px;
+	height: 150px;
+	background: yellow;
+	float: left;
+	margin: 8px;
+}
+#introduction .content-two ul li span {
+	width: calc(100% - 160px);
+	min-height: 150px;
+	float: left;
+	margin-left: 10px;
+}
+#introduction .content-two ul li span h2 {
+	width: 100%;
+	height: 35px;
+	float: left;
+	line-height: 35px;
+	font-size: 1.2em;
+	font-weight: 400;
+	color:#333;
+}
+#introduction .content-two ul li span h3 {
+	width: 100%;
+	height: 25px;
+	float: left;
+	font-size: 1.0em;
+	font-weight: 400;
+	color: #555;
+}
+#introduction .content-two ul li span p {
+	width: 100%;
+	min-height: 80px;
+	float: left;
+	line-height: 20px;
+	font-size: 0.9em;
+	text-indent: 0px;
+	margin-bottom: 10px;
 }
 
 
@@ -51,7 +197,7 @@
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 50%;
-	background: #ccc;
+	background: #cdcdcd;
 	float: left;
 }
 #contact .block-content div span img {
@@ -69,7 +215,7 @@
 	margin-top: 8px;
 	display: inline-block;
 	text-align: center;
-	color: red;
+	color: #9E1E18;
 }
 #contact .block-content div p {
 	text-align: center;
