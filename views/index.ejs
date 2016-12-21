@@ -9,7 +9,7 @@
 	<meta name="description" content="<%=description%>" />
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -20,8 +20,28 @@
 		<!-- 图片滚动区域 -->
 		<div id="focus">
 			<div class="focus-block">
-				<img src="images/focus1.jpg" class="focus-img">
+                <img src="images/focus1.jpg" class="focus-img">
 			</div>
+            <div class="focus-all-images">
+                <img src="images/focus1.jpg" class="focus-img">
+                <img src="images/focus2.jpg" class="focus-img">
+                <img src="images/focus3.jpg" class="focus-img">
+                <img src="images/focus4.jpg" class="focus-img">
+                <img src="images/focus5.jpg" class="focus-img">
+                <img src="images/focus6.jpg" class="focus-img">
+                <img src="images/focus7.jpg" class="focus-img">
+                <img src="images/focus8.jpg" class="focus-img">
+                <img src="images/focus9.jpg" class="focus-img">
+                <img src="images/focus10.jpg" class="focus-img">
+            </div>
+            <div class="focus-console">
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+            <div class="focus-thumbnail">
+                <span></span>
+                <span></span>
+            </div>
 		</div>
     <!-- 简介 -->
     <div class="introduction">
@@ -106,5 +126,6 @@
 	<!-- 引入尾部文件 -->
 	<% include footer %>
 </div>
+<script type="text/javascript" src="js/focus-img.js"></script>
 </body>
 </html>

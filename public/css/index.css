@@ -23,6 +23,11 @@
 	margin-top: 25px;
 	background: #EFF0DC;
 	float: left;
+	overflow: hidden;
+}
+/*所有图片*/
+.focus-all-images {
+	display: none;
 }
 /*滚动图片大小：1400 * 500 */
 .focus-block img.focus-img {
