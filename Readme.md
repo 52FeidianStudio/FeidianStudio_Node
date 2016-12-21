@@ -1,6 +1,6 @@
 #沸点工作室2016官网
 
-######基于Node.js + Express + MongoDB，目前效果看http://www.norma0119.cn:5200
+#####项目基于Node.js + Express + MongoDB，目前效果看http://www.norma0119.cn:5200
 -------------------
 ###Node.js
 * something want to say
