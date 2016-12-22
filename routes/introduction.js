@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
+var IntroductionIndex = require('../data/models/introduction.index');
+var IntroductionTeachers = require('../data/models/introduction.teachers');
+var IntroductionGroups = require('../data/models/introduction.groups');
+
 /* GET introduction page. 沸点简介*/
 router.get('/', function(req, res, next) {
   var data = {

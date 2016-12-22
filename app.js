@@ -15,6 +15,9 @@ var works = require('./routes/works');
 var recruit = require('./routes/recruit');
 var contact = require('./routes/contact');
 
+var dbURL = 'mongodb://localhost/feidian';
+var db = require('mongoose').connect(dbURL);
+
 var app = express();
 
 // view engine setup

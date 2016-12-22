@@ -19,156 +19,33 @@
 	<div id="main">
 		<div id="members">
 			<div class="time-nav">
-				<span><i></i><font>2016级</font></span>
-				<span><i></i><font>2015级</font></span>
-				<span><i></i><font>2014级</font></span>
-				<span><i></i><font>2013级</font></span>
-				<span><i></i><font>2011级</font></span>
-				<span><i></i><font>2010级</font></span>
+			<% for(var i = 0;i < members.length;i++) { %>
+				<span><i></i><font><a href="#<%=members[i].grade%>"><%=members[i].grade%>级</a></font></span>
+			<% } %>
 			</div>
 			<div class="members-content">
-				<div id="2016" class="year-section">
-					<h2>2016级</h2>
-					<div class="person">
-						<div class="person-img">
-							<img src="uploads/headimg/60.jpg">
-						</div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
+				<% for(var i = 0;i < members.length;i++) { %>
+					<div id="<%=members[i].grade%>" class="year-section">
+						<h2><%=members[i].grade%>级</h2>
+						<!-- 每一年级的成员 -->
+						<% person = members[i].person; %>
+						<% for(var j = 0;j < person.length;j++) { %>
+							<div class="person">
+								<div class="person-img">
+									<img src="<%=person[j].img%>">
+								</div>
+								<div class="person-info">
+									<p><font>编号：</font><%=person[j].num%></p>
+									<p><font>方向：</font><%=person[j].group%></p>
+									<p><font>E-mail：</font><%=person[j].email%></p>
+									<p><font>最喜欢的话：</font><%=person[j].word%></p>
+									<p><font>简介：</font><%=person[j].introduction%></p>
+								</div>
+								<div class="person-name"><%=person[j].name%></div>
+							</div>
+						<% } %>
 					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-				</div>
-				<div id="2015" class="year-section">
-					<h2>2015级</h2>
-					<div class="person">
-						<div class="person-img">
-							<img src="uploads/headimg/60.jpg">
-						</div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-					<div class="person">
-						<div class="person-img"><img src="uploads/headimg/60.jpg"></div>
-						<div class="person-info">
-							<p><font>编号：</font>60</p>
-							<p><font>方向：</font>Web前端开发</p>
-							<p><font>E-mail：</font>1060031655@qq.com</p>
-							<p><font>最喜欢的话：</font>大家好大家哈大号金属大师倪发科聚少离多弗兰克</p>
-							<p><font>简介：</font>阿斯顿发送到发送到发送到功夫大使馆</p>
-						</div>
-						<div class="person-name">黄一凡</div>
-					</div>
-				</div>
+				<% } %>
 			</div>
 		</div>
 	</div>
