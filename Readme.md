@@ -9,7 +9,7 @@
 
 --------------
 ###MongoDB
-* windows平台下的安装
+* [windows平台下的安装](http://docs.mongoing.com/manual-zh/tutorial/install-mongodb-enterprise-on-windows.html)
 * Linux平台下的安装（CentOS 7.2）
 * Rockmongo：MongoDB 管理工具 （基于PHP5.0的web数据库管理工具，需安装PHP的[php_mongo](http://www.php.net/manual/en/mongo.installation.php)扩展） 
 
