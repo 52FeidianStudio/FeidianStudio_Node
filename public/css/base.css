@@ -20,9 +20,9 @@ a {
 	width: 100%;
 	height: 80px;
 	float: left;
-	/*background: #EB3F2F;*/
-	/*background: #34352C;*/
-	background: #373E40;
+	/*background: #373E40;*/
+	background: #161514;
+	background: url(../images/black.jpg);
 }
 #logo {
 	width: 15%;
@@ -79,16 +79,18 @@ a {
 /*尾部*/
 #footer {
 	width: 100%;
-	height: 80px;
+	height: 100px;
 	float: left;
-	background: #373E40;
+	/*background: #373E40;*/
+	background: #161514;
+	background: url(../images/black.jpg);
 }
 #footer p {
 	width: 50%;
-	height: 30px;
+	height: 35px;
 	display: inline-block;
 	margin-left: 25%;
-	margin-top: 25px;
+	margin-top: 35px;
 	line-height: 30px;
 	text-align: center;
 	float: left;
@@ -99,7 +101,7 @@ a {
 	height:50px;
 	line-height: 65px;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 25px;
 	margin-right: 50px;
 	display: inline-block;
 	float: right;

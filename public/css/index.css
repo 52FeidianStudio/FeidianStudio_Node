@@ -14,6 +14,7 @@
 	width: 100%;
 	height: 580px;
 	background: #fff;
+	background: #F5F6EB;
 	float: left;
 }	
 .focus-block {
@@ -124,13 +125,13 @@
 	float: left;
 	font-weight: 400;
 	font-size: 1.5em;
-	color: #666;
+	color: #000;
 }
 .title-description {
 	width: 100%;
 	height: 30px;
 	float: left;
-	color: #999;
+	color: #333;
 	font-size: 0.9em;
 	text-align: center;
 	margin-top: 5px;
@@ -149,7 +150,7 @@
 	min-width: 1400px;
 	height: 300px;
 	float: left;
-	background: #F5F6EB;
+	background: #EFF0DC;
 }
 .introduction .block-content p {
 	font-size: 1.2em;
@@ -161,9 +162,16 @@
 .group {
 	width: 100%;
 	min-width: 1400px;
-	height: 400px;
+	height: 420px;
 	float: left;
-	background: #fff;
+	background: #373E40;
+	background: none;
+}
+.group .title {
+	color: #000;
+}
+.group .title-description {
+	color: #333;
 }
 .group .block-content {
 	float: none;
@@ -186,26 +194,26 @@
 	display: inline-block;
 	float: left;
 	border-radius: 50%;
-	border: 10px solid #ddd;
+	border: 10px solid #C7FFEC;
 }
 .group .block-content div span:hover {
 	transition-property: border;
 	transition-duration: 1s;
-	border: 10px solid #707070;
+	border: 10px solid transparent;
 }
-.group .block-content div img {
+.group .block-content div span img {
 	width: 70px;
 	height: 70px;
 	margin-left: 30px;
 	margin-top: 25px;
 }
-.group .block-content div:hover img {
+.group .block-content div span:hover img {
 	transition-property: width,height,margin-left,margin-top;
 	transition-duration: 1s,1s,1s,1s;
-	width: 80px;
-	height: 80px;
-	margin-left: 25px;
-	margin-top: 22px;
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+	margin-top: 12px;
 }
 .group .block-content div p{
 	width: 100%;
@@ -213,34 +221,36 @@
 	margin-top: 20px;
 	float: left;
 	text-align: center;
+	color: #000;
 }
 /*文化*/
 .culture {
 	width: 100%;
-	height: 350px;
+	height: 400px;
 	float: left;
+	background: url(../images/black.jpg);
 }
 .culture .block-header h2,
 .culture .block-header p {
-	color: #333;
+	color: #fff;
 	/*text-shadow: 0px 0px 5px #000;*/
 }
 .culture .block-content h2{
 	width: 100%;
 	height: 100px;
-	font-size: 3em;
+	font-size: 2.8em;
 	float: left;
 	line-height: 120px;
 	text-align: center;
 	color: #fff;
-	font-family: 华文行楷;
+	font-family: "微软雅黑";
 	text-shadow: 0px 0px 5px #000;
 }
 .culture .block-content h3{
 	width: 100%;
 	font-size: 2.2em;
 	float: left;
-	line-height: 80px;
+	line-height: 100px;
 	text-align: center;
 	color: #fff;
 	font-family: "微软雅黑", Arial, "Helvetica Neue", Helvetica;
@@ -252,12 +262,13 @@
 	width: 100%;
 	height: 480px;
 	float: left;
-	background: #F5F6EB;
-
+	background: #EFF0DC;
+	background: #F5F5F5;
 }
 .news .block-content {
 	width: 80%;
 	margin-left: 10%;
+	margin-top: 15px;
 }
 .news-list {
 	width: 40%;
@@ -266,11 +277,11 @@
 }
 .news .left {
 	float: left;
-	margin-left: 8%;
+	margin-left: 7.5%;
 }
 .news .right {
 	float: right;
-	margin-right: 8%;
+	margin-right: 7.5%;
 }
 .news-list ul {
 	width: 100%;
@@ -283,6 +294,7 @@
 	margin-bottom: 8px;
 }
 .news-list ul li a {
+	width: 100%;
 	height: 30px;
 	display: inline-block;
 	float: left;
@@ -299,6 +311,7 @@
 }
 .news-list ul li a b {
 	font-weight: 400;
+	margin-right: 5px;
 }
 .news-list ul li font {
 	width: 100%;
@@ -307,45 +320,21 @@
 	text-indent: 10px;
 }
 
-/*.news .right {
-	width: 60%;
-	height: 320px;
-	float: right;
-	background: #999;
-}
-.news .right div {
-	width: 45%;
-	height: 100%;
-	margin-right: 5%;
-	float: left;
-}
-.news .right div img {
+/*联系方式*/
+/*.contact {
 	width: 100%;
-	height: 160px;
-	border: 1px solid #333;
+	height: 400px;
 	float: left;
-}
-.news .right div span {
-	width: 100%;
-	height: 100px;
-	margin-top: 20px;
-	float: left;
-}
-.news .right div span p {
-	height: 35px;
-	line-height: 35px;
-	font-size: 1.2em;
-}
-.news .right div span p:first-child {
-	font-size: 1.4em;
+	background: #F5F6EB;
 }*/
+
 
 /*友情链接*/
 .links {
 	width: 100%;
-	height: 300px;
+	height: 320px;
 	float: left;
-	background: #FFF;
+	background: #EFF0DC;
 }
 .links .links-block {
 	width: 90%;
@@ -357,10 +346,11 @@
 }
 .links-block img {
 	clear: both;
-	width: 190px;
+	min-width: 150px;
+	width: 10%;
 	height: 120px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
 	margin-top: 10px;
 	border: 1px solid #ccc;
 	/*background: yellow;*/
