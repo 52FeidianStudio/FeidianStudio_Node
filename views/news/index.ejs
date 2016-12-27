@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>沸点工作室-华中农业大学第一互联网技术团队</title>
+	<link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/page.css">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<!-- 引入头部文件 -->
+	<% include ../include/header %>	
+	<!-- 内容区域 -->
+	<div id="main">
+		<div id="news">
+			<% include sidenav %>
+			<div class="right-content">
+				<div class="content-one content-section">
+					<h2>新闻公告</h2>
+					<div class="news-list">
+						<% for(var i = 0;i < announce.length;i++) { %>
+							<a href=""><li><p><%=announce[i].title%></p><font><%=announce[i].time%></font></li></a>
+						<% } %>
+						<!-- <a href=""><li><p>沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦</p><font>2016-12-12</font></li></a> -->
+					</div>
+					<div class="news-page">
+						12345
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/page.js"></script>
+	<!-- 引入尾部文件 -->
+	<% include ../include/footer %>
+</div>
+</body>
+</html>

@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>沸点工作室</title>
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
+  <style>
+  	body{
+  		width: auto;
+  		height: 100%;
+  	}
+  	img {
+  		width: 465px;
+  		height: 512px;
+  		display: block;
+  		margin: 0 auto;
+  		margin-top: 100px;
+  	}
+  </style>
 </head>
 <body>
-  <h1><%=message%></h1>
-  <h2><%=error.status%></h2>
-  <pre><%=error.stack%></pre>
+  <pre><%=message%></pre>
+  <p><%=error.status%></p>
+  <img src="/images/404.jpg">
 </body>
 </html>

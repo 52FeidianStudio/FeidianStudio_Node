@@ -83,3 +83,12 @@ html,body{
 .login form input.submit:hover{
 	background: #2F9833;
 }
+.login form span.error {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	float: left;
+	color: #B31800;
+}

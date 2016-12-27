@@ -19,7 +19,7 @@ const personSchema = new mongoose.Schema({
 });
 
 var MembersSchema = new mongoose.Schema({
-   grade: String, //年级
+   grade: Number, //年级
    person: [personSchema]  //成员
 });
 
