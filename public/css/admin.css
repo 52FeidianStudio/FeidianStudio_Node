@@ -21,6 +21,7 @@ html,body{
 	margin: 0 auto;
 	margin-top: 150px;
 	background: #fff;
+	background: hsla(0,100%,100%,0.5);
 	border-radius: 8px;
 }
 .login h2 {
@@ -31,7 +32,9 @@ html,body{
 	float: left;
 	font-size: 1.8em;
 	font-weight: 400;
-	background: wheat;
+	background: #495A80;
+	background: hsla(250,100%,50%,0.5);
+	color: #fff;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
