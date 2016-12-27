@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>沸点工作室-华中农业大学第一互联网技术团队</title>
+	<link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/admin.css">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="login">
+			<h2>管理员登录</h2>
+			<form>
+				<span><font>账　号：</font><input type="text" name="username" class="username"></span>
+				<span><font>密　码：</font><input type="password" name="password" class="password"></span>
+				<span><font>验证码：</font><input type="text" name="code" class="code"></span>
+				<input type="button" name="submit" value="登录" class="submit">
+				<span class="error"></span>
+			</form>
+		</div>
+	</div>
+	<script>
+		$(".submit").click(function() {
+			$.post('/admin/login',{
+				username: $('.username').val(),
+				password: $('.password').val(),
+				code    : $('.code').val()
+			},function(res) {
+				$(".error").html(res);
+				if(res == "登陆成功") {
+					window.location.href = "/admin/index";
+				}
+			});
+		})
+	</script>
+</body>
+</html>

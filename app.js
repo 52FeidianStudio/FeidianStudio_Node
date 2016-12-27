@@ -14,6 +14,10 @@ var news = require('./routes/news');
 var works = require('./routes/works');
 var recruit = require('./routes/recruit');
 var contact = require('./routes/contact');
+var admin = require('./routes/admin');
+
+var dbURL = 'mongodb://localhost/feidian';
+var db = require('mongoose').connect(dbURL);
 
 var app = express();
 
@@ -39,6 +43,7 @@ app.use('/news', news);
 app.use('/works', works);
 app.use('/recruit', recruit);
 app.use('/contact', contact);
+app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

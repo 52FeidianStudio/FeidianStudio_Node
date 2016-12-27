@@ -1,11 +1,3 @@
-// 侧导航点击显示 or 隐藏
-$("#left-nav-ul a").click(function() {
-	$("#left-nav-ul a li").removeClass("current");
-	$(this).children('li').addClass("current");
-	$(".content-section").hide();
-	$(".content-section").eq($(this).index()).show();
-});
-
 
 var nav = $(".time-nav"); //得到导航对象
 var win = $(window); //得到窗口对象
