@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	overflow: hidden;
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	background: url(../images/welcome.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+}
+.login {
+	width: 350px;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 150px;
+	background: #fff;
+	border-radius: 8px;
+}
+.login h2 {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	float: left;
+	font-size: 1.8em;
+	font-weight: 400;
+	background: wheat;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.login form {
+	margin-top: 15px;
+	width: 100%;
+	float: left;
+}
+.login form span {
+	width: 80%;
+	margin-left: 10%;
+	height: 60px;
+	margin-top: 10px;
+	float: left;
+}
+.login form span font {
+	width: 100%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	font-size: 1.1em;
+	text-indent: 3px;
+}
+.login form span input {
+	width: 100%;
+	height: 30px;
+	text-indent: 5px;
+	border-radius: 3px;
+	border: 1px solid #999;
+}
+.login form input.submit {
+	width: 80%;
+	height: 40px;
+	font-size: 1.2em;
+	margin-top: 40px;
+	margin-left: 10%;
+	float: left;
+	border-radius: 5px;
+	background: #44b549;
+	color: #fff;
+	border: 0px;
+	text-align: center;
+	letter-spacing: 10px;
+	cursor: pointer;
+}
+.login form input.submit:hover{
+	background: #2F9833;
+}
