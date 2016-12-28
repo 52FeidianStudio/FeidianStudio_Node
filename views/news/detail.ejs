@@ -14,12 +14,15 @@
 	<% include ../include/header %>	
 	<!-- 内容区域 -->
 	<div id="main">
-		<div id="culture">
+		<div id="news">
 			<% include sidenav %>
 			<div class="right-content">
-				<div class="content-two content-section">
-					<h2>规章制度</h2>
-					<div class="culture-article"><%=rules.content[0].value%></div>
+				<div class="content-section news-detail">
+					<h2><%=detail.title%></h2>
+					<span><font class="author"><%=detail.author%></font> · <font class="time"><%=detail.time%></font></span>
+					<div class="news-detail-article">
+						<%=detail.content%>
+					</div>
 				</div>
 			</div>
 		</div>

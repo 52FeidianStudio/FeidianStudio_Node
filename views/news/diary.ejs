@@ -21,9 +21,8 @@
 					<h2>成员日志</h2>
 					<div class="news-list">
 						<% for(var i = 0;i < diary.length;i++) { %>
-							<a href=""><li><p><%=diary[i].title%></p><font><%=diary[i].author%>/<%=diary[i].time%></font></li></a>
+							<a href="/news/detail/<%=diary[i]._id%>"><li><p><%=diary[i].title%></p><font><%=diary[i].author%> / <%=diary[i].time%></font></li></a>
 						<% } %>
-						<!-- <a href=""><li><p>沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦</p><font>2016-12-12</font></li></a> -->
 					</div>
 					<div class="news-page">
 						12345

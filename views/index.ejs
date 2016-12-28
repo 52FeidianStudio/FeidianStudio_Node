@@ -98,18 +98,16 @@
           <div class="block-content">
             <div class="left news-list">
               <ul>
-                <li><a href=""><b>【新闻公告】</b>沸点工作室2016年新官网上线啦</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【新闻公告】</b>沸点工作室2016年12月招新结果公布</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【新闻公告】</b>沸点工作室Android组改名为Java工程组</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【新闻公告】</b>沸点工作室关于成立信息安全组的相关通知</a><font>2016-12-12</font></li>
+                <% for(var i = 0;i < announce.length;i++) { %>
+                    <li><a href="/news/detail/<%=announce[i]._id%>"><b>【新闻公告】</b><%=announce[i].title%></a><font><%=announce[i].time%></font></li>
+                <% } %>
               </ul>
             </div>
             <div class="right news-list">
               <ul>
-                <li><a href=""><b>【成员日志】</b>沸点工作室2016年暑期培训于8月5日正式开始</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【成员日志】</b>沸点工作室2015年全体成员合影留念</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【成员日志】</b>沸点工作室2015年负责人换届竞选结果公布</a><font>2016-12-12</font></li>
-                <li><a href=""><b>【成员日志】</b>沸点工作室2014年招新开始啦</a><font>2016-12-12</font></li>
+                <% for(var i = 0;i < diary.length;i++) { %>
+                    <li><a href="/news/detail/<%=announce[i]._id%>"><b>【成员日志】</b><%=diary[i].title%></a><font><%=diary[i].time%></font></li>
+                <% } %>
               </ul>
             </div>
             <!-- <div class="right">
@@ -135,12 +133,12 @@
         		<p class="title-description">OUR FRIENDLY LINKS</p>
         	</div>
         	<div class="links-block">
-        		<img src="/images/sale.png">
-        		<img src="/images/sale.png">
-        		<img src="/images/sale.png">
-        		<img src="/images/sale.png">
-        		<img src="/images/sale.png">
-        		<img src="/images/sale.png">
+                <a href="javascript:;"><img src="/uploads/system/feidian.jpg"></a>
+                <a href="javascript:;"><img src="/uploads/system/library.jpg"></a>
+                <a href="https://github.com/"><img src="/uploads/system/github.jpg"></a>
+                <a href="http://www.csdn.net/"><img src="/uploads/system/csdn.jpg"></a>
+                <a href="https://www.xctf.org.cn/"><img src="/uploads/system/xctf.jpg"></a>
+                <a href="javascript:;"><img src="/uploads/system/null.jpg"></a>
         	</div>
         </div>
 	</div>

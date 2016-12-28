@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/page.css">
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -15,9 +15,34 @@
 	<!-- 内容区域 -->
 	<div id="main">
 		<div id="works">
-			
+			<h2>作品展示</h2>
+			<% for(var i = 0;i < works.length;i++) { %>
+				<div class="works-block">
+					<a href="<%=works[i].links%>">
+						<div class="face">
+							<img src="<%=works[i].img%>">
+							<span class="title"><%=works[i].title%></span>
+						</div>
+						<div class="mask">
+							<span>项目时间：<%=works[i].time%></span>
+							<span>项目人员：<%=works[i].author%></span>
+							<span>项目简介：<%=works[i].introduction%></span>
+						</div>
+					</a>
+				</div>
+			<% } %>
 		</div>
 	</div>
+	<script>
+		$(".works-block").mouseover(function(){
+			$(this).find(".mask").show();
+			$(this).find(".title").hide();
+		});
+		$(".works-block").mouseout(function(){
+			$(this).find(".mask").hide();
+			$(this).find(".title").show();
+		});
+	</script>
 	<!-- 引入尾部文件 -->
 	<% include include/footer %>
 </div>
