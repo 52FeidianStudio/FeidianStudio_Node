@@ -338,7 +338,7 @@
 }
 .links .links-block {
 	width: 90%;
-	height: 140px;
+	height: 120px;
 	margin-left: 5%;
 	float: left;
 	/*background: #fff;*/
@@ -348,7 +348,7 @@
 	clear: both;
 	min-width: 150px;
 	width: 10%;
-	height: 120px;
+	height: 100px;
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 10px;

@@ -19,8 +19,23 @@
 			<% include sidenav %>
 
 			<div class="right-content">
-				<div class="content-three content-section">
+				<div class="content-section">
 					<h2>分组简介</h2>
+					<div class="group-content">
+						<ul>
+							<% for(var i = 0;i < groups.length;i++) { %>
+								<li>
+									<span class="group-image"><img src="/uploads/system/<%=groups[i].img%>"></span>
+									<span class="group-message">
+										<h2><%=groups[i].name%></h2>
+										<p>分组简介：<%=groups[i].introduction%></p>
+										<p>关键词：<%=groups[i].keyword%></p>
+										<p>现任组长及联系方式：<%=groups[i].leader%></p>
+									</span>
+								</li>
+							<% } %>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

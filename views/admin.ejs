@@ -22,16 +22,18 @@
 	</div>
 	<script>
 		$(".submit").click(function() {
-			$.post('/admin/login',{
-				username: $('.username').val(),
-				password: $('.password').val(),
-				code    : $('.code').val()
-			},function(res) {
-				$(".error").html(res);
-				if(res == "登陆成功") {
-					window.location.href = "/admin/index";
-				}
-			});
+			if($('.username').val() != "") {
+				$.post('/admin/login',{
+					username: $('.username').val(),
+					password: $('.password').val(),
+					code    : $('.code').val()
+				},function(res) {
+					$(".error").html(res);
+					if(res == "登陆成功") {
+						window.location.href = "/admin/index";
+					}
+				});
+			}
 		})
 	</script>
 </body>

@@ -104,7 +104,7 @@
 #introduction .content-section p {
 	width: 100%;
 	float: left;
-	text-indent: 2em;
+	/*text-indent: 2em;*/
 	font-size: 1em;
 	line-height: 30px;
 	color: #333;
@@ -125,19 +125,22 @@
 	height: 150px;
 	background: yellow;
 	float: left;
-	margin: 8px;
+	margin: 15px;
+	margin-left: 12px;
+	margin-right: 10px;
 }
 #introduction .content-two ul li span {
-	width: calc(100% - 160px);
+	width: calc(100% - 170px);
 	min-height: 150px;
 	float: left;
 	margin-left: 10px;
+	margin-bottom: 15px;
 }
 #introduction .content-two ul li span h2 {
 	width: 100%;
-	height: 35px;
+	height: 40px;
 	float: left;
-	line-height: 35px;
+	line-height: 45px;
 	font-size: 1.2em;
 	font-weight: 400;
 	color:#333;
@@ -152,15 +155,54 @@
 }
 #introduction .content-two ul li span p {
 	width: 100%;
-	min-height: 80px;
 	float: left;
 	line-height: 20px;
 	font-size: 0.9em;
 	text-indent: 0px;
+	margin-bottom: 5px;
+}
+.group-content {
+	width: 100%;
+	float: left;
+}
+.group-content ul li {
+	width: 100%;
+	float: left;
+	border: 1px solid #ddd;
+	padding-bottom: 15px;
 	margin-bottom: 10px;
+}
+.group-image {
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+.group-image img {
+	width: 110px;
+	height: 110px;
+	margin: 10px;
+	float: left;
+}
+.group-message {
+	width: calc(100% - 150px);
+	margin-left: 10px;
+	float: left;
+}
+.group-message h2 {
+	height: 40px;
+	line-height: 45px;
 }
 
 
+
+
+#culture {
+
+}
+.culture-article {
+	width: 100%;
+	float: left;
+}
 
 
 
@@ -339,14 +381,148 @@
 	text-align: right;
 	display: inline-block;
 }
+.news-detail h2 {
+	width: 100%;
+	float: left;
+	height: 65px;
+	line-height: 80px;
+	text-align: center;
+}
+.news-detail span {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.news-detail span font.time, 
+.news-detail span font.author {
+	font-weight: 300;
+}
+
+.news-detail-article {
+	width: 96%;
+	margin-left: 2%;
+	min-height: 350px;
+	margin-bottom: 15px;
+	float: left;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
 
 
 
 /*作品展示*/
 #works {
-	height: 500px;
+	min-height: 500px;
 	background: #fff;
 	border-radius: 5px;
+	padding-bottom: 40px;
+	float: left;
+}
+#works h2 {
+	width: 100%;
+	text-align: center;
+	float: left;
+	height: 90px;
+	line-height: 80px;
+	font-weight: 400;
+}
+.works-block {
+	width: 22.5%;
+	height: 250px;
+	float: left;
+	margin-left: 2%;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 5px #EFF0DC;
+	border-radius: 5px;
+	position: relative;
+}
+.works-block:hover {
+	box-shadow: 0px 0px 8px #999;
+}
+.works-block .face {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.works-block .face img {
+	width: 100%;
+	height: 100%;
+	/*margin: 5%;*/
+	float: left;
+	border-radius: 5px;
+}
+.works-block .face span {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 15px;
+	display: inline-block;
+	background: #495A80;
+	color: #fff;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.works-block .mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9998;
+	width:100%;
+	height:100%;
+	background:#333;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	border-radius: 5px;
+	display:none;
+	color: #fff;
+}
+.works-block .mask span {
+	width: 90%;
+	margin-left: 5%;
+	height: 20x;
+	line-height: 20px;
+	margin-top: 10px;
+	float: left;
+}
+
+/*招新*/
+#recruit {
+
+}
+.recruit-content {
+	float: left;
+	width: 100%;
+}
+.recruit-content span {
+	width: 100%;
+	min-height: 50px;
+	margin-top: 20px; 
+	float: left;
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.recruit-content span font {
+	display: block;
+	width: 100%;
+	/*float: left;*/
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.recruit-content span p {
+	width: 90%;
+	display: block;
+	float: right;
 }
 
 

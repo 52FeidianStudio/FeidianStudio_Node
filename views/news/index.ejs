@@ -21,9 +21,8 @@
 					<h2>新闻公告</h2>
 					<div class="news-list">
 						<% for(var i = 0;i < announce.length;i++) { %>
-							<a href=""><li><p><%=announce[i].title%></p><font><%=announce[i].time%></font></li></a>
+							<a href="/news/detail/<%=announce[i]._id%>"><li><p><%=announce[i].title%></p><font><%=announce[i].time%></font></li></a>
 						<% } %>
-						<!-- <a href=""><li><p>沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦沸点工作室2016年新官网上线啦</p><font>2016-12-12</font></li></a> -->
 					</div>
 					<div class="news-page">
 						12345

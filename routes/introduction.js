@@ -1,32 +1,46 @@
 var express = require('express');
 var router = express.Router();
 
-var IntroductionIndex = require('../data/models/introduction.index');
-var IntroductionTeachers = require('../data/models/introduction.teachers');
-var IntroductionGroups = require('../data/models/introduction.groups');
 
 /* GET introduction index page. 沸点简介*/
 router.get('/', function(req, res, next) {
-  var data = {
+	var data = {
 
-  }
-  res.render('introduction/index', data );
+	}
+	res.render('introduction/index', data );
 });
 
 // 导师简介
 router.get('/teacher', function(req, res, next) {
-  var data = {
-
-  }
-  res.render('introduction/teacher', data );
+	var data = {};
+	var Teachers = require('../data/models/teachers');
+	Teachers.aggregate([
+		{$sort: {"sort": 1}}
+	], function(err, teachers) {
+		if(err) {
+			console.log("err");
+			next(err);
+		}else {
+			data.teachers = teachers;
+			res.render('introduction/teacher', data);
+		}
+	})	
 });
 
 // 分组简介
 router.get('/group', function(req, res, next) {
-  var data = {
- 
-  }
-  res.render('introduction/group', data );
+	var Groups = require('../data/models/groups');
+	var data = {};
+	Groups.find({}, function(err, result) {
+		if(err) {
+			console.log("err");
+			next(err);
+		}else {
+			data.groups = result;
+			res.render('introduction/group', data );
+		}
+	})
+	
 });
 
 module.exports = router;
